@@ -1,0 +1,53 @@
+.price-type {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+.price-type p {
+    font-size: 15px;
+    color: $light_blue;
+    margin: 1.5em;
+}
+
+input {
+    -webkit-appearance: none;
+    background: none;
+    position: relative;
+    align-self: center;
+    background: $primary;
+    height: 35px;
+    width: 65px;
+    border-radius: 36px;
+    outline: none;
+    cursor: pointer;
+    transition: 250ms ease;
+    outline: none;
+}
+
+input[type="checkbox"]:before {
+    content: '';
+    position: absolute;
+    width:30px;
+    margin-top: 2px;
+    margin-left: 2px;
+    height:30px;
+    top:0;
+    left:0;
+    border-radius: 36px;
+    background-color: white;
+    transition: 100ms ease;
+}
+
+input[type="checkbox"]:focus {
+    outline:0;
+}
+
+input:checked {
+    opacity: .5;
+}
+
+input:checked[type="checkbox"]:before {
+    left: 30px;
+}

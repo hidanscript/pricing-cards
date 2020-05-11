@@ -1,0 +1,28 @@
+.bg-images {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-between;
+    display: flex;
+}
+
+.bg-images .bg-bot {
+    align-self: flex-end;
+    bottom: 0;
+}
+
+.bg-images .bg-top {
+    align-self: flex-start;
+}
+
+@media(max-width: 500px) {
+    .bg-images {
+        width:100%;
+    }
+
+    .bg-bot {
+        width: 25px;
+    }
+}

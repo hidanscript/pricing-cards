@@ -1,0 +1,242 @@
+.title {
+  text-align: center;
+  color: #494c5f;
+  font-size: 1em;
+  margin: 5em;
+  margin-bottom: 2em;
+}
+
+.price-type {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+}
+
+.price-type p {
+  font-size: 15px;
+  color: #b3b5c6;
+  margin: 1.5em;
+}
+
+input {
+  -webkit-appearance: none;
+  background: none;
+  position: relative;
+  align-self: center;
+  background: linear-gradient(to bottom, #a3a8f0, #696fdd);
+  height: 35px;
+  width: 65px;
+  border-radius: 36px;
+  outline: none;
+  cursor: pointer;
+  transition: 250ms ease;
+  outline: none;
+}
+
+input[type=checkbox]:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  margin-top: 2px;
+  margin-left: 2px;
+  height: 30px;
+  top: 0;
+  left: 0;
+  border-radius: 36px;
+  background-color: white;
+  transition: 100ms ease;
+}
+
+input[type=checkbox]:focus {
+  outline: 0;
+}
+
+input:checked {
+  opacity: 0.5;
+}
+
+input:checked[type=checkbox]:before {
+  left: 30px;
+}
+
+.bg-images {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  justify-content: space-between;
+  display: flex;
+}
+
+.bg-images .bg-bot {
+  align-self: flex-end;
+  bottom: 0;
+}
+
+.bg-images .bg-top {
+  align-self: flex-start;
+}
+
+@media (max-width: 500px) {
+  .bg-images {
+    width: 100%;
+  }
+
+  .bg-bot {
+    width: 25px;
+  }
+}
+.card-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  border-radius: 16px;
+  min-width: 330px;
+  min-height: 500px;
+  max-height: 500px;
+  padding: 1.5em;
+  color: #494c5f;
+  padding-top: 1em;
+  text-align: center;
+  background: white;
+  box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.3);
+  border-collapse: collapse;
+}
+
+.card:nth-child(1) {
+  border-radius: 16px 0 0 16px;
+}
+
+.card:nth-child(3) {
+  border-radius: 0px 16px 16px 0px;
+}
+
+.card-feature {
+  border-bottom: 1px solid #b3b5c6;
+  color: #b3b5c6;
+  border-collapse: collapse;
+  font-size: 20px;
+  padding: 1em;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.card-feature-focus {
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 20px;
+  padding: 1em;
+  margin: 0;
+}
+
+.card-price {
+  font-size: 2.3em;
+}
+
+.card-feature-top {
+  border-top: 1px solid #b3b5c6;
+}
+
+.card-focus {
+  background: linear-gradient(to bottom, #a3a8f0, #696fdd);
+  border-radius: 16px;
+  padding: 1.5em;
+  padding-top: 1.5em;
+  padding-bottom: 2em;
+  text-align: center;
+  box-shadow: 0px 0px 18px -5px rgba(0, 0, 0, 0.3);
+}
+
+.card-feature ~ .is-focus {
+  border-bottom: 1px solid white;
+}
+
+.card-feature-top-focus {
+  border-top: 1px solid white;
+}
+
+.is-annualy {
+  display: none;
+}
+
+.is-focus {
+  color: white;
+}
+
+.card .card-button, .is-feature-button {
+  width: 100%;
+  padding: 1em;
+  font-family: "Montserrat";
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 2.5em;
+  letter-spacing: 2px;
+  border: 1px solid transparent;
+}
+
+.card-button {
+  background: linear-gradient(to bottom, #a3a8f0, #696fdd);
+  color: white;
+}
+
+.is-feature-button {
+  background: white;
+  color: #696fdd;
+}
+
+.card .card-button:hover {
+  background: white;
+  color: #696fdd;
+  border: 1px solid #696fdd;
+}
+
+.card .is-feature-button:hover {
+  background: none;
+  color: white;
+  border: 1px solid white;
+}
+
+@media (max-width: 500px) {
+  .card {
+    margin: 1em;
+  }
+
+  .card:nth-child(1) {
+    border-radius: 16px;
+  }
+
+  .card:nth-child(3) {
+    border-radius: 16px;
+  }
+}
+body {
+  background-color: #f6f6fe;
+  overflow-x: hidden;
+}
+
+body > * {
+  font-family: "Montserrat";
+  font-size: 25px;
+}
+
+.attribution {
+  color: #494c5f;
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+@media (max-width: 1366px) {
+  .attribution {
+    display: none;
+  }
+}

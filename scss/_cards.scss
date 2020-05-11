@@ -1,0 +1,136 @@
+.card-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    border-radius: 16px;
+    min-width: 330px;
+    min-height: 500px;
+    max-height: 500px;
+    padding: 1.5em;
+    color: $dark_blue;
+    padding-top: 1em;
+    text-align: center;
+    background: white;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+    border-collapse: collapse;
+}
+
+.card:nth-child(1) {
+    border-radius: 16px 0 0 16px;
+}
+
+.card:nth-child(3) {
+    border-radius: 0px 16px 16px 0px;
+}
+
+.card-feature {
+    border-bottom: 1px solid $light_blue;
+    color: $light_blue;
+    border-collapse: collapse;
+    font-size: 20px;
+    padding: 1em;
+    border-collapse: collapse;
+    margin:0;
+    
+}
+
+
+.card-feature-focus {
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 20px;
+    padding: 1em;
+    margin:0;
+    
+}
+
+.card-price {
+    font-size: 2.3em;
+}
+
+.card-feature-top {
+    border-top: 1px solid $light_blue;
+}
+
+.card-focus {
+    background: $primary;
+    border-radius: 16px;
+    padding: 1.5em;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    text-align: center;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}
+
+.card-feature ~ .is-focus {
+    border-bottom: 1px solid white;
+}
+
+.card-feature-top-focus {
+    border-top: 1px solid white;
+}
+
+.is-annualy {
+    display: none;
+}
+
+.is-focus {
+    color: white;
+}
+
+.card .card-button, .is-feature-button {
+    width: 100%;
+    padding: 1em;
+    font-family: 'Montserrat';
+    border-radius: 8px;
+    cursor:pointer;
+    margin-top: 2.5em;
+    letter-spacing: 2px;
+    border: 1px solid transparent;
+}
+
+.card-button {
+    background: $primary;
+    color: white;
+}
+
+.is-feature-button {
+    //margin-top: 1.8em;
+    background: white;
+    color: $purple;
+}
+
+.card .card-button:hover {
+    background: white;
+    color: $purple;
+    border: 1px solid $purple;
+}
+
+.card .is-feature-button:hover {
+    background: none;
+    color: white;
+    border: 1px solid white;
+}
+
+@media(max-width: 500px) {
+    .card {
+        margin: 1em;
+    } 
+
+    .card:nth-child(1) {
+        border-radius: 16px;
+    }
+    
+    .card:nth-child(3) {
+        border-radius: 16px;
+    }
+}
