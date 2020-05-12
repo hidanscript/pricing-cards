@@ -1,7 +1,13 @@
 .title {
     text-align: center;
     color: $dark_blue;
-    font-size: 1em;
+    font-size: .8em;
     margin: 5em;
     margin-bottom: 2em;
+}
+
+@media(max-width:1366px) {
+    .title {
+        margin: 3em;
+    }
 }

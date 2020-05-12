@@ -1,6 +1,5 @@
 .card-container {
     display: flex;
-    width: 100%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -8,9 +7,7 @@
 
 .card {
     border-radius: 16px;
-    min-width: 330px;
-    min-height: 500px;
-    max-height: 500px;
+    min-width: 300px;
     padding: 1.5em;
     color: $dark_blue;
     padding-top: 1em;
@@ -34,7 +31,7 @@
     border-bottom: 1px solid $light_blue;
     color: $light_blue;
     border-collapse: collapse;
-    font-size: 20px;
+    font-size: .8em;
     padding: 1em;
     border-collapse: collapse;
     margin:0;
